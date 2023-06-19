@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BATCH-1 LECTURE-63 A PALINDROMIC NUMBER</title>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        
+        <script>
+            // 1. Function Defination
+            function checkForPalindrom(n){ // n is formal arguement
+                    // Function body
+                    // String.length
+                    alert(n.length);
+                    alert(n.charAt(0));
+                    for(j=n.length;j>=0;j--){
+                        console.log(n.charAt(j));
+                        for(var i=0; i<n.length; i++){
+                        console.log(n.charAt(i));
+                        if (n.charAt(j) == n.charAt(i)){
+                            isPalindrom = true;
+                        }else{
+                            isPalindrom = false;
+                        }
+
+                    }
+                }
+                if(isPalindrom == true){
+                    alert(n + " is a Palindrom number");
+                }else{
+                    alert(n + " is not a Palindrom number");
+                }
+            }
+
+            let number = prompt('Please Enter the number to check if it is palindrom or not?')
+            // convert the string to number
+            //number = parseInt(number);
+
+            // String Int Number ---> ParseInt ---> Integer
+            // "6336"+10=633610
+            // ParseInt('6336') => 6336 + 10 => 6346
+            //alert(number+10);
+            // 2. Function calling
+            checkForPalindrom(number);
+
+        </script>
+    </body>
+</html>
